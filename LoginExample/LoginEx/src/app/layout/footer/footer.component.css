@@ -1,0 +1,11 @@
+.footer{
+    background:lightcoral;
+    font: bold;
+    padding-left: 10px;
+    margin-left: 250px;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

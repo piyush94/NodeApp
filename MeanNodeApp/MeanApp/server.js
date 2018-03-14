@@ -11,6 +11,8 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded());
 
+//express.Promise = require('bluebird');
+
 function connectToDb() {
     mongodb.MongoClient.connect(uri, function (err, database) {
         if (err) return;

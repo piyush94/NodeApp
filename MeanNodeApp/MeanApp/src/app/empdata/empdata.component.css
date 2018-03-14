@@ -1,0 +1,7 @@
+.scrollit { height:400px; overflow-y:scroll; overflow-x: scroll; }
+.fixedcol {
+    max-width: 45px;
+}
+.notfixedcol {
+    min-width: 80px;
+}

@@ -1,0 +1,18 @@
+.mynav{
+    background: lightblue;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    padding: 20px;
+    font-size: 20px;
+    color: black;
+    z-index: 1;
+}
+.content{
+    margin-left: 250px;
+    padding: 20px;
+}
+.mainbody{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
