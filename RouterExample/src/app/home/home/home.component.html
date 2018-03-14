@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-3">
+    <ul>
+      <li>
+        <a [routerLink]="['/home/planet/earth']" routerLinkActive="active">Earth</a>
+      </li>
+      <li>
+        <a [routerLink]="['/home/planet/mars']" routerLinkActive="active">Mars</a>
+      </li>
+      <li>
+        <a [routerLink]="['/home/city/chicago']" routerLinkActive="active">Chicago</a>
+      </li>
+      <li>
+        <a [routerLink]="['/home/city/newyork']" routerLinkActive="active">NewYork</a>
+      </li>
+    </ul>
+  </div>
+  <div class="col-9">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<!--  {outlets: {content: '/planet/earth'}} -->
