@@ -3,7 +3,7 @@ import { CanActivate, Router, CanActivateChild } from '@angular/router';
 import { Observable } from 'rxjs/Observable';
 
 @Injectable()
-export class AuthService implements CanActivate {
+export class AuthService  {
 
   constructor(private router: Router) { }
 
@@ -13,10 +13,10 @@ export class AuthService implements CanActivate {
   //   return false;
   // }
 
-  canActivate(): boolean {
-    console.log('herere');
-    this.router.navigate(['/home']);
-    return false;
-  }
+  // canActivate(): boolean {
+  //   console.log('herere');
+  //   this.router.navigate(['/home']);
+  //   return false;
+  // }
 
 }
