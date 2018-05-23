@@ -17,12 +17,12 @@ export class InfoComponent implements OnInit {
       .data
       .subscribe(v => this.proceed(v));
   }
-  
+
   ngOnDestroy() {
     this.sub.unsubscribe();
   }
 
   proceed = function (data) {
-    console.log(data);
+    // console.log(data);
   }
 }

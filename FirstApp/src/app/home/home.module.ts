@@ -6,10 +6,15 @@ import { InfoComponent } from './info/info.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AuthService } from '../auth.service';
+import { PermService } from '../perm.service';
 
 const routes: Routes = [
   {
     path: 'home',
+    data: {
+      title: 'Home',
+      permMap: ['hello', 'world']
+    },
     canActivate: [AuthService],
     component: HomeComponent,
     children: [
@@ -17,16 +22,25 @@ const routes: Routes = [
         path: 'info',
         component: InfoComponent,
         data: {
-          title: 'information'
+          title: 'Information',
+          permMap: ['hello', 'world']
         }
       },
       {
         path: 'about',
-        component: AboutComponent
+        component: AboutComponent,
+        data: {
+          title: 'About',
+          permMap: ['hello', 'world']
+        }
       },
       {
         path: 'contact',
-        component: ContactComponent
+        component: ContactComponent,
+        data: {
+          title: 'Contact',
+          permMap: ['hello', 'world']
+        }
       }
     ]
   }
@@ -37,7 +51,7 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes)
   ],
-  providers: [AuthService],
+  providers: [AuthService, PermService],
   declarations: [AboutComponent, ContactComponent, InfoComponent, HomeComponent]
 })
 export class HomeModule { }

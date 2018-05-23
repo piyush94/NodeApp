@@ -8,18 +8,28 @@ import { HomeModule } from './home/home.module';
 import { AuthService } from './auth.service';
 import { LoginComponent } from './login/login/login.component';
 import { LoginModule } from './login/login.module';
+import { Error403Component } from './error403/error403.component';
 
 const routes: Routes = [
   {
     path: '',
     redirectTo: 'login',
     pathMatch: 'full'
+  },
+  {
+    path: '403',
+    component: Error403Component,
+    data: {
+      title: 'Forbidden',
+      permMap: []
+    }
   }
 ];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    Error403Component
   ],
   imports: [
     BrowserModule,
