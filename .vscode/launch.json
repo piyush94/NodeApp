@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/MeanNodeApp/MeanApp/server.js"
+            "program": "${workspaceFolder}/GridFSExample/index.js"
         },
         {
             "name": "Launch Chrome against localhost, with sourcemaps",
