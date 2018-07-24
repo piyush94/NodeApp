@@ -11,8 +11,6 @@ import { isArray } from 'util';
 import { RhService } from './services/rh.service';
 import { RhauthService } from './services/rhauth.service';
 
-const RhLogic = undefined;
-
 @NgModule({
   declarations: [
     AppComponent,

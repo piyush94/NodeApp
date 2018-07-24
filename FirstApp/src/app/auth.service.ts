@@ -11,9 +11,9 @@ export class AuthService implements CanActivate {
 
   canActivate() {
     console.log('here');
-    if (this.isLoggedIn())
+    if (this.isLoggedIn()) {
       return true;
-    else {
+    } else {
       this.router.navigate(['/login']);
       return false;
     }
@@ -25,14 +25,14 @@ export class AuthService implements CanActivate {
     localStorage.setItem('auth', 'true');
     this.roles = localStorage.getItem('permMap').split(',');
     console.log(this.roles);
-  }
+  };
 
   logout = function () {
     localStorage.clear();
-  }
+  };
 
   isLoggedIn = function () {
     return localStorage.getItem('auth') === 'true';
-  }
+  };
 
 }
