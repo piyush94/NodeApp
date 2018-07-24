@@ -3,16 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { NgxRestheartModule, RhService, RhauthService, RestheartService } from 'ngx-restheart';
+// import { LoginComponent } from './login/login.component';
+import { AppRoutingModule, routeComponents } from './app-routing.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    routeComponents
   ],
   imports: [
     BrowserModule,
-    NgxRestheartModule
+    NgxRestheartModule,
+    AppRoutingModule
   ],
   providers: [RhService, RhauthService, RestheartService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}

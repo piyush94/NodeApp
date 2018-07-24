@@ -7,4 +7,4 @@
 export { RhService } from './lib/services/rh.service'
 export { RhauthService } from './lib/services/rhauth.service'
 export { RestheartService } from './lib/services/restheart.service'
-export * from './lib/ngx-restheart.module';
+export { NgxRestheartModule } from './lib/ngx-restheart.module';

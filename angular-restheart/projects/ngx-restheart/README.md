@@ -1,0 +1,1 @@
+Restheart Client Module for Angular

@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Inject } from '@angular/core';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { Restangular } from 'ngx-restangular';
 import { RestheartService } from './restheart.service';
@@ -9,15 +9,15 @@ import { isDefined } from '@angular/compiler/src/util';
 })
 export class RhService {
 
-  constructor(private localStorageService: LocalStorageService, private Restangular: Restangular, private restheart: RestheartService) {
+  constructor(private localStorageService: LocalStorageService, private restangular: Restangular, private restheart: RestheartService) {
   }
 
   Rh() {
-    return this.Restangular.withConfig((RestangularConfigurer) => {
+    return this.restangular.withConfig((RestangularConfigurer) => {
       // restheart.setBaseUrl('hwllo');
-      var baseUrl = this.restheart.getBaseUrl();
+      let baseUrl = this.restheart.getBaseUrl();
       // baseUrl = 'http://server1.localhost/';
-      console.log('baseurl' + baseUrl);
+      // console.log('baseurl' + baseUrl);
 
       if (isDefined(baseUrl) && baseUrl !== null) {
         this.localStorageService.set('rh_baseUrl', baseUrl);

@@ -45,3 +45,38 @@ export class RestheartService {
   // };
 
 }
+
+// export function Restheart() {
+//   const obj = {
+//     _baseUrl: '',
+//     _logicBaseUrl: '',
+//     setBaseUrl: (f) => {
+//       this._baseUrl = f;
+//     },
+//     setLogicBaseUrl: (f) => {
+//       this._logicBaseUrl = f;
+//     },
+//     getBaseUrl: (f) => {
+//       return this._baseUrl;
+//     },
+//     getLogicBaseUrl: (f) => {
+//       return this._logicBaseUrl;
+//     }
+//   };
+
+//   return obj;
+//   // this.setBaseUrl = function(f) {
+//   //   this._baseUrl = f;
+//   // };
+//   // this.setLogicBaseUrl = function(f) {
+//   //   this. = f;
+//   // };
+//   // this.getBaseUrl = function() {
+//   //   return this._baseUrl;
+//   // };
+//   // this.getLogicBaseUrl = function() {
+//   //   return this._logicBaseUrl;
+//   // };
+//   //
+//   // return this;
+// }
